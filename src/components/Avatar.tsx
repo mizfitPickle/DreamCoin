@@ -1,22 +1,14 @@
 import React, { useState } from "react";
 
-const DreamAvatar: React.FC = () => {
+interface DreamAvatarProps {
+  onDreamClick: () => void;
+}
+
+const DreamAvatar: React.FC<DreamAvatarProps> = ({ onDreamClick }) => {
   const [isChatVisible, setIsChatVisible] = useState(false);
 
   return (
-    <div id="dream-avatar-container">
-      <div className={`${isChatVisible ? 'visible' : ''} dream-chat-bubble`}>
-        <button 
-          onClick={() => setIsChatVisible(false)}
-          className="absolute top-1 right-2 text-gray-400 hover:text-white text-lg cursor-pointer"
-        >
-          &times;
-        </button>
-        <p className="pr-6">
-          Hi! I'm Dream the Cloud. I'm here to help answer questions about our mission to support veterans. How can
-          I assist you today?
-        </p>
-      </div>
+    <div id="dream-avatar-container" onClick={onDreamClick}>
       <svg 
         id="dream-avatar" 
         viewBox="0 0 100 100" 

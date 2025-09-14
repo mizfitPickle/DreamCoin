@@ -116,7 +116,7 @@ export const ProposalModal: React.FC<ProposalModalProps> = ({ isOpen, onClose })
 
     try {
       // Note: In a real implementation, you would need to add your Gemini API key
-      const apiKey = ""; // Add your Gemini API key here
+      const apiKey = "AIzaSyDH-pw1-AkV2_HUXmzH06wV1L_wB_wSKDI"; // Add your Gemini API key here
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
       
       const systemPrompt = "You are a helpful assistant for a decentralized autonomous organization (DAO) called 'Dream' which is focused on veteran wellness and mental health. A community member wants to create a funding proposal. Their idea is provided below. Draft a formal, well-structured proposal based on their idea. The proposal must include the following sections, each clearly marked: a 'Proposal Title', a one-paragraph 'Summary', a 'Detailed Description' of the initiative, a section for the 'Proposed Budget & Timeline', and a final section on the 'Expected Impact' on the veteran community. The tone should be professional, clear, persuasive, and ready for a community vote.";

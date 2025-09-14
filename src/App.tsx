@@ -33,7 +33,7 @@ function App() {
         <Community />
       </main>
       <Footer />
-      <DreamAvatar />
+      <DreamAvatar onDreamClick={() => setProposalOpen(true)}  />
       
       <WhitepaperModal 
         isOpen={isWhitepaperOpen} 
