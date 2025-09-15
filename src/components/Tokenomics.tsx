@@ -44,7 +44,7 @@ const Tokenomics: React.FC = () => {
       explanation: "Long-term commitment with regular distribution after cliff."
     },
     {
-      title: "Private Investors & Ecosystem Fund",
+      title: "Private Sale & Early Investors",
       schedule: "6-month cliff, then linear release over 24 months.",
       explanation: "Balances early ROI with ongoing development needs."
     },
@@ -57,11 +57,6 @@ const Tokenomics: React.FC = () => {
       title: "Social Impact Fund",
       schedule: "No time schedule; released via governance vote.",
       explanation: "Transparent distribution to partners for social good."
-    },
-    {
-      title: "Access & Rewards Fund",
-      schedule: "Released immediately at launch.",
-      explanation: "Rapid rollout of rewards for early engagement."
     }
   ];
   return (
@@ -75,11 +70,6 @@ const Tokenomics: React.FC = () => {
             A transparent, community-focused token model for long-term growth and impact.
           </p>
           {/* Example image placeholder */}
-          <img
-            src="https://placehold.co/600x150?text=Dream+Tokenomics+Banner"
-            alt="Tokenomics Banner"
-            className="mx-auto rounded-lg shadow-lg mb-4"
-          />
         </div>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left: Pie Chart & Allocation */}
@@ -122,12 +112,6 @@ const Tokenomics: React.FC = () => {
                 <li><strong>Initial Investment (TVL):</strong> $260 ($130 ETH + $130 DMT)</li>
               </ul>
             </div>
-            {/* Example additional image */}
-            <img
-              src="https://placehold.co/400x150?text=Token+Flow+Chart"
-              alt="Token Flow Chart"
-              className="mx-auto rounded-lg shadow"
-            />
           </div>
           {/* Right: Vesting, Utility, and Rewards */}
           <div>
